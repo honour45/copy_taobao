@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+
+    tools:context=".zhuce">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/zhuce_l1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:text="新用户注册"
+            >
+        </TextView>
+    </LinearLayout>
+
+
+
+
+
+<!--    /*第一层-->
+        <LinearLayout
+            android:id="@+id/zhuce_l2"
+            android:layout_below="@id/zhuce_l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:textSize="20dp"
+
+                ></TextView>
+            <EditText
+                android:id="@+id/zhuce_et1"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/kuang_bai"
+                ></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/zhuce_l2"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/zhuce_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="qqqqqqqq"
+                android:textColor="@color/colorAccent"
+                >
+            </TextView>
+        </LinearLayout>
+<!--第二层-->
+        <LinearLayout
+            android:layout_below="@id/zhuce_l2"
+            android:id="@+id/zhuce_l3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+
+            android:layout_marginTop="30dp"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:textSize="20dp"
+
+                ></TextView>
+
+            <EditText
+                android:id="@+id/zhuce_et2"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/kuang_bai"
+                ></EditText>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/zhuce_l3"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/zhuce_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="qqqqqqqq"
+            android:textColor="@color/colorAccent"
+            >
+        </TextView>
+    </LinearLayout>
+
+
+<!--    第三层-->
+
+    <LinearLayout
+        android:layout_below="@id/zhuce_l3"
+        android:id="@+id/zhuce_l4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="确认密码"
+            android:textSize="20dp"
+
+            ></TextView>
+
+        <EditText
+            android:id="@+id/zhuce_et3"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/kuang_bai"
+            ></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/zhuce_l4"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/zhuce_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="qqqqqqqq"
+            android:textColor="@color/colorAccent"
+            >
+        </TextView>
+    </LinearLayout>
+<!--第四层-->
+    <LinearLayout
+        android:layout_below="@id/zhuce_l4"
+        android:id="@+id/zhuce_l5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:textSize="20dp"
+
+            ></TextView>
+
+        <EditText
+            android:id="@+id/zhuce_et4"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/kuang_bai"
+            ></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/zhuce_l5"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/zhuce_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="qqqqqqqq"
+            android:textColor="@color/colorAccent"
+            >
+        </TextView>
+    </LinearLayout>
+<!--第六层-->
+
+    <LinearLayout
+    android:layout_below="@id/zhuce_l5"
+    android:id="@+id/zhuce_l6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+
+    >
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="地址"
+        android:textSize="20dp"
+
+        ></TextView>
+
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/dizhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="选择地址"
+                ></TextView>
+            <TextView
+                android:id="@+id/zhuce_tv5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                ></TextView>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/zhuce_l7"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/zhuce_l5"
+    android:layout_marginTop="130dp"
+    android:gravity="center"
+    >
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="注册"
+        android:id="@+id/zhuce_bt"
+
+        >
+
+    </Button>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zhuce_l7"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        >
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="注册"
+            android:id="@+id/zhuce_bt2"
+
+            >
+
+        </Button>
+    </LinearLayout>
+
+
+</RelativeLayout>

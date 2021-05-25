@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Fragment_zhuye3">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        >
+        <ListView
+            android:id="@+id/flis4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+
+        </ListView>
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    >
+<LinearLayout
+
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+    >
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="商品总金额："
+        android:textSize="25dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/money3"
+        android:gravity="center_vertical"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="0元"
+        android:textSize="25dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/del"
+        android:gravity="center_vertical"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="清空购物车"
+        android:textSize="15dp"
+        >
+
+    </TextView>
+</LinearLayout>
+    <TextView
+        android:id="@+id/jiesuan"
+        android:layout_alignParentRight="true"
+        android:layout_width="100dp"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:textSize="29dp"
+        android:text="结算"
+        android:background="@color/blackBg">
+
+    </TextView>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+</FrameLayout>

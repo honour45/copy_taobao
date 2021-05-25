@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.Fragment_zhuye1">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <ImageView
+
+                android:layout_gravity="center"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@mipmap/saoyisao"
+                >
+            </ImageView>
+            <EditText
+                android:textSize="25dp"
+                android:cursorVisible="false"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:text=""
+                android:layout_height="match_parent">
+            </EditText>
+            <TextView
+                android:gravity="center"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:text="搜索"
+                >
+            </TextView>
+
+        </LinearLayout>
+<!--轮播-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <!--存放图片的ViewPager-->
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/loopviewpager">
+                </androidx.viewpager.widget.ViewPager>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="#33000000">
+                    <!-- 标题-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="left"
+                        android:id="@+id/loop_dec"/>
+                    <!-- 小圆点-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_dots_loop"
+                        android:orientation="horizontal"
+                        android:gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:padding="10dp">
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+
+    >
+<!--    <HorizontalScrollView-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="5dp" >-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_margin="10dp" >-->
+<!--            android:scrollbars="none“-->
+<!--            <GridView-->
+<!--                android:id="@+id/grid"-->
+<!--                android:scrollbars="none"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="fill_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:numColumns="auto_fit"-->
+<!--                android:stretchMode="spacingWidthUniform" >-->
+<!--            </GridView>-->
+
+            <GridView
+                android:id="@+id/gv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:verticalSpacing="10dp" />
+<!--        </LinearLayout>-->
+<!--    </HorizontalScrollView>-->
+
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    >
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="2500dp"
+        android:id="@+id/listview"
+        />
+
+
+</LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>
+
+
+
+</LinearLayout>

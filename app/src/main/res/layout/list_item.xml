@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/im"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+
+        ></ImageView>
+
+
+    <TextView
+        android:id="@+id/tt"
+        android:layout_toRightOf="@id/im"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="商品1"
+        android:layout_marginLeft="20dp"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/tt2"
+        android:layout_toRightOf="@id/tt"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="55"
+        android:layout_marginLeft="20dp"
+        >
+
+    </TextView>
+    <TextView
+        android:layout_toRightOf="@id/tt2"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="元"
+        >
+
+    </TextView>
+    <Button
+        android:id="@+id/bt"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:text="加入购物车"
+></Button>
+
+
+
+
+</RelativeLayout>
